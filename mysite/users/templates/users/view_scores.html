@@ -1,0 +1,15 @@
+<h2>Your Uploaded Files and Scores</h2>
+<table>
+  <tr>
+    <th>Filename</th>
+    <th>Upload Date</th>
+    <th>Score</th>
+  </tr>
+  {% for file in files %}
+  <tr>
+    <td>{{ file.file.name }}</td>
+    <td>{{ file.upload_date }}</td>
+    <td>{{ file.score }}</td>
+  </tr>
+  {% endfor %}
+</table>
